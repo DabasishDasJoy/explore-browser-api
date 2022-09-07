@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .counter-container {
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            background-color: #010001;
+            border-radius: 10px;
+            padding: 2rem 1rem;
+        }
+        #count{
+            width: 20%;
+            background-color: aliceblue;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 30px;
+            text-align: center;
+            font-weight: 700;
+            color: #010001;
+        }
+        #btn-increase, #btn-reset{
+            border-radius: 10px;
+            background-color: rgb(133, 133, 248);
+            padding: 0.5rem 1rem;
+            color: black;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        #btn-reset{
+            margin-top: 1rem;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="counter-container">
+                <p id="count">0</p>
+                <button id="btn-increase" onclick="increaseCounter()">Increase</button>
+                <button id="btn-reset" onclick="resetCounter()">Reset</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/counter.js"></script>
+</body>
+
+</html>
